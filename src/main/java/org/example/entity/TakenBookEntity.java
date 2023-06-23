@@ -21,7 +21,10 @@ public class TakenBookEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "book_id")
     private BookEntity bookId;
-    private LocalDateTime createdDate;
+    @Column(name = "created_date")
+    private LocalDateTime createdDate = LocalDateTime.now();
+    @Column(name = "status")
     private Status status;
+    @Column(name = "note")
     private String note;
 }

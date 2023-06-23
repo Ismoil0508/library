@@ -63,7 +63,7 @@ public class MainController {
 
 
     public void run(){
-        StandardServiceRegistry ssr = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
+        /*StandardServiceRegistry ssr = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
         Metadata meta = new MetadataSources(ssr).getMetadataBuilder().build();
 
         SessionFactory factory = meta.getSessionFactoryBuilder().build();
@@ -73,7 +73,6 @@ public class MainController {
         session.save(bookEntity);
         t.commit();
         session.close();
-        factory.close();
-
+        factory.close();*/
     }
 }
